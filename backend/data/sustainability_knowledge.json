@@ -1,0 +1,157 @@
+{
+  "tips": {
+    "transportation": [
+      {
+        "id": "t001",
+        "title": "Switch to Electric Vehicle",
+        "description": "Electric vehicles produce 3x fewer emissions than petrol cars over their lifetime.",
+        "co2_saving_pct": 68,
+        "effort": "high",
+        "impact": "high",
+        "tags": ["car", "commute", "transport"]
+      },
+      {
+        "id": "t002",
+        "title": "Use Public Transport",
+        "description": "Buses and trains emit up to 80% less CO2 per passenger than solo car trips.",
+        "co2_saving_pct": 75,
+        "effort": "medium",
+        "impact": "high",
+        "tags": ["commute", "bus", "train"]
+      },
+      {
+        "id": "t003",
+        "title": "Cycle or Walk Short Distances",
+        "description": "Zero-emission travel for trips under 5km. Also improves health.",
+        "co2_saving_pct": 100,
+        "effort": "low",
+        "impact": "medium",
+        "tags": ["commute", "health"]
+      },
+      {
+        "id": "t004",
+        "title": "Carpool with Colleagues",
+        "description": "Sharing a car with 3 others cuts your transport emissions by 75%.",
+        "co2_saving_pct": 75,
+        "effort": "low",
+        "impact": "high",
+        "tags": ["commute", "car", "social"]
+      },
+      {
+        "id": "t005",
+        "title": "Take Train Instead of Short-Haul Flights",
+        "description": "Train travel emits 6x less CO2 per km than flying. For trips under 600km, trains are often comparable in total travel time.",
+        "co2_saving_pct": 84,
+        "effort": "medium",
+        "impact": "very_high",
+        "tags": ["travel", "flight", "train"]
+      }
+    ],
+    "food": [
+      {
+        "id": "f001",
+        "title": "Adopt a Plant-Based Diet",
+        "description": "Vegan diets produce 50-70% fewer greenhouse gas emissions than meat-heavy diets.",
+        "co2_saving_pct": 50,
+        "effort": "high",
+        "impact": "very_high",
+        "tags": ["food", "diet", "vegan"]
+      },
+      {
+        "id": "f002",
+        "title": "Reduce Beef Consumption",
+        "description": "Beef produces 27kg CO2e per kg — the single largest dietary contributor to emissions.",
+        "co2_saving_pct": 25,
+        "effort": "medium",
+        "impact": "high",
+        "tags": ["food", "diet", "beef"]
+      },
+      {
+        "id": "f003",
+        "title": "Buy Local and Seasonal",
+        "description": "Local, seasonal produce avoids air freight and long refrigerated supply chains.",
+        "co2_saving_pct": 10,
+        "effort": "low",
+        "impact": "medium",
+        "tags": ["food", "local", "seasonal"]
+      },
+      {
+        "id": "f004",
+        "title": "Reduce Food Waste",
+        "description": "Up to 30% of food is wasted. Wasted food accounts for 8-10% of global emissions.",
+        "co2_saving_pct": 8,
+        "effort": "low",
+        "impact": "medium",
+        "tags": ["food", "waste"]
+      }
+    ],
+    "energy": [
+      {
+        "id": "e001",
+        "title": "Install Solar Panels",
+        "description": "Solar power reduces home electricity emissions by up to 95%.",
+        "co2_saving_pct": 90,
+        "effort": "high",
+        "impact": "very_high",
+        "tags": ["energy", "solar", "home"]
+      },
+      {
+        "id": "e002",
+        "title": "Switch to Green Tariff",
+        "description": "Choose a renewable energy supplier for your home electricity.",
+        "co2_saving_pct": 70,
+        "effort": "low",
+        "impact": "high",
+        "tags": ["energy", "electricity", "home"]
+      },
+      {
+        "id": "e003",
+        "title": "Improve Home Insulation",
+        "description": "Good insulation reduces heating/cooling energy needs by 30-50%.",
+        "co2_saving_pct": 35,
+        "effort": "high",
+        "impact": "high",
+        "tags": ["energy", "heating", "home"]
+      },
+      {
+        "id": "e004",
+        "title": "Use LED Lighting",
+        "description": "LED bulbs use 75% less energy than incandescent bulbs.",
+        "co2_saving_pct": 5,
+        "effort": "low",
+        "impact": "low",
+        "tags": ["energy", "lighting", "home"]
+      }
+    ],
+    "work": [
+      {
+        "id": "w001",
+        "title": "Work From Home",
+        "description": "Full remote work eliminates commute emissions and reduces office energy use.",
+        "co2_saving_pct": 40,
+        "effort": "low",
+        "impact": "high",
+        "tags": ["work", "commute", "remote"]
+      },
+      {
+        "id": "w002",
+        "title": "Replace Business Flights with Video Calls",
+        "description": "A single transatlantic flight emits 1.5 tonnes CO2. Video calls produce near zero.",
+        "co2_saving_pct": 99,
+        "effort": "low",
+        "impact": "very_high",
+        "tags": ["work", "travel", "flight"]
+      }
+    ]
+  },
+  "facts": [
+    "Aviation is responsible for about 2.5% of global CO2 emissions, but its total climate impact is much higher due to contrails.",
+    "The food system accounts for about 26% of global greenhouse gas emissions.",
+    "Buildings and construction contribute 39% of global energy-related CO2 emissions.",
+    "A vegan diet uses 75% less land, produces 50% fewer greenhouse gases, and uses 55% less water than a meat diet.",
+    "The average American's carbon footprint is more than double the global average.",
+    "1 tree absorbs approximately 22kg of CO2 per year. A transatlantic flight emits ~1,600kg.",
+    "Electric vehicles are already cleaner than petrol cars in over 95% of the world's electricity grids.",
+    "If all Americans switched to a plant-based diet, it would reduce agriculture emissions by 61%."
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "transportation": {
+    "car": {
+      "petrol": { "kg_co2_per_km": 0.192, "source": "UK DEFRA 2023" },
+      "diesel": { "kg_co2_per_km": 0.171, "source": "UK DEFRA 2023" },
+      "hybrid": { "kg_co2_per_km": 0.109, "source": "UK DEFRA 2023" },
+      "electric": { "kg_co2_per_km": 0.053, "source": "IEA 2023" },
+      "average": { "kg_co2_per_km": 0.170, "source": "UK DEFRA 2023" }
+    },
+    "bus": { "kg_co2_per_km": 0.089, "source": "UK DEFRA 2023" },
+    "train": { "kg_co2_per_km": 0.041, "source": "UK DEFRA 2023" },
+    "subway": { "kg_co2_per_km": 0.028, "source": "IEA 2023" },
+    "bicycle": { "kg_co2_per_km": 0.0, "source": "Zero emission" },
+    "walking": { "kg_co2_per_km": 0.0, "source": "Zero emission" },
+    "motorcycle": { "kg_co2_per_km": 0.114, "source": "UK DEFRA 2023" },
+    "flight": {
+      "short_haul": { "kg_co2_per_km": 0.255, "source": "ICAO 2023" },
+      "long_haul": { "kg_co2_per_km": 0.195, "source": "ICAO 2023" },
+      "average": { "kg_co2_per_km": 0.225, "source": "ICAO 2023" }
+    },
+    "taxi": { "kg_co2_per_km": 0.210, "source": "UK DEFRA 2023" },
+    "rideshare": { "kg_co2_per_km": 0.158, "source": "UK DEFRA 2023" }
+  },
+  "food": {
+    "beef": { "kg_co2_per_kg": 27.0, "source": "Poore & Nemecek 2018" },
+    "lamb": { "kg_co2_per_kg": 39.2, "source": "Poore & Nemecek 2018" },
+    "pork": { "kg_co2_per_kg": 12.1, "source": "Poore & Nemecek 2018" },
+    "chicken": { "kg_co2_per_kg": 6.9, "source": "Poore & Nemecek 2018" },
+    "fish": { "kg_co2_per_kg": 6.1, "source": "Poore & Nemecek 2018" },
+    "eggs": { "kg_co2_per_kg": 4.8, "source": "Poore & Nemecek 2018" },
+    "dairy": { "kg_co2_per_kg": 3.2, "source": "Poore & Nemecek 2018" },
+    "vegetables": { "kg_co2_per_kg": 2.0, "source": "Poore & Nemecek 2018" },
+    "fruits": { "kg_co2_per_kg": 1.1, "source": "Poore & Nemecek 2018" },
+    "grains": { "kg_co2_per_kg": 1.4, "source": "Poore & Nemecek 2018" },
+    "legumes": { "kg_co2_per_kg": 0.9, "source": "Poore & Nemecek 2018" },
+    "nuts": { "kg_co2_per_kg": 2.3, "source": "Poore & Nemecek 2018" },
+    "diet_profiles": {
+      "vegan": { "kg_co2_per_day": 2.89, "source": "Oxford University 2023" },
+      "vegetarian": { "kg_co2_per_day": 3.81, "source": "Oxford University 2023" },
+      "pescatarian": { "kg_co2_per_day": 3.91, "source": "Oxford University 2023" },
+      "mixed": { "kg_co2_per_day": 5.63, "source": "Oxford University 2023" },
+      "meat_heavy": { "kg_co2_per_day": 7.19, "source": "Oxford University 2023" }
+    }
+  },
+  "energy": {
+    "electricity": {
+      "global_average": { "kg_co2_per_kwh": 0.475, "source": "IEA 2023" },
+      "us_average": { "kg_co2_per_kwh": 0.386, "source": "EPA 2023" },
+      "uk_average": { "kg_co2_per_kwh": 0.233, "source": "UK DEFRA 2023" },
+      "eu_average": { "kg_co2_per_kwh": 0.276, "source": "EEA 2023" },
+      "renewable": { "kg_co2_per_kwh": 0.020, "source": "IPCC 2022" }
+    },
+    "natural_gas": { "kg_co2_per_kwh": 0.203, "source": "UK DEFRA 2023" },
+    "heating_oil": { "kg_co2_per_litre": 2.96, "source": "UK DEFRA 2023" },
+    "coal": { "kg_co2_per_kwh": 0.820, "source": "IEA 2023" },
+    "home_profiles": {
+      "apartment_small": { "kwh_per_month": 250, "description": "< 50m2" },
+      "apartment_medium": { "kwh_per_month": 400, "description": "50-80m2" },
+      "house_small": { "kwh_per_month": 600, "description": "< 100m2" },
+      "house_medium": { "kwh_per_month": 900, "description": "100-150m2" },
+      "house_large": { "kwh_per_month": 1400, "description": "> 150m2" }
+    }
+  },
+  "shopping": {
+    "clothing": { "kg_co2_per_item": 10.0, "source": "WRAP 2023" },
+    "electronics_phone": { "kg_co2_per_unit": 70.0, "source": "Apple 2023" },
+    "electronics_laptop": { "kg_co2_per_unit": 400.0, "source": "Dell 2023" },
+    "electronics_tv": { "kg_co2_per_unit": 300.0, "source": "Various OEMs 2023" },
+    "furniture": { "kg_co2_per_item": 80.0, "source": "IKEA 2023" },
+    "online_delivery": { "kg_co2_per_package": 0.5, "source": "MIT 2023" },
+    "spending_profiles": {
+      "minimal": { "kg_co2_per_month": 20, "description": "Buy only essentials" },
+      "average": { "kg_co2_per_month": 65, "description": "Average consumer" },
+      "high": { "kg_co2_per_month": 150, "description": "Frequent shopper" }
+    }
+  },
+  "waste": {
+    "landfill": { "kg_co2_per_kg": 0.587, "source": "UK DEFRA 2023" },
+    "recycled": { "kg_co2_per_kg": 0.021, "source": "UK DEFRA 2023" },
+    "composted": { "kg_co2_per_kg": 0.010, "source": "UK DEFRA 2023" },
+    "household_average_monthly_kg": 18.0
+  },
+  "scenarios": {
+    "electric_vehicle": {
+      "assumption_km_per_month": 1200,
+      "from_factor": 0.170,
+      "to_factor": 0.053,
+      "description": "Switching from average petrol car to EV"
+    },
+    "vegetarian_diet": {
+      "from_kg_co2_per_day": 5.63,
+      "to_kg_co2_per_day": 3.81,
+      "description": "Switching from mixed to vegetarian diet"
+    },
+    "vegan_diet": {
+      "from_kg_co2_per_day": 5.63,
+      "to_kg_co2_per_day": 2.89,
+      "description": "Switching from mixed to vegan diet"
+    },
+    "remote_work": {
+      "commute_days_saved_per_month": 20,
+      "average_commute_km": 25,
+      "from_factor": 0.170,
+      "office_energy_share_kg_per_day": 2.5,
+      "description": "Full remote work, no commute"
+    },
+    "solar_power": {
+      "avg_home_monthly_kwh": 900,
+      "from_factor": 0.386,
+      "to_factor": 0.020,
+      "description": "Switch home electricity to solar"
+    },
+    "reduced_flights": {
+      "avg_flights_per_year": 4,
+      "avg_flight_km": 2000,
+      "from_factor": 0.255,
+      "reduction_pct": 0.75,
+      "description": "Reduce flights by 75%"
+    },
+    "led_lighting": {
+      "kwh_saved_per_month": 30,
+      "factor": 0.386,
+      "description": "Switch all lighting to LED"
+    },
+    "plant_based_meals": {
+      "meals_per_week": 7,
+      "from_kg_co2_per_meal": 1.8,
+      "to_kg_co2_per_meal": 0.6,
+      "description": "Replace 7 meals per week with plant-based options"
+    }
+  },
+  "benchmarks": {
+    "global_average_annual_kg_co2": 4800,
+    "us_average_annual_kg_co2": 14800,
+    "uk_average_annual_kg_co2": 5500,
+    "eu_average_annual_kg_co2": 6400,
+    "paris_agreement_target_annual_kg_co2": 2000,
+    "categories": {
+      "very_low": { "max_monthly_kg": 150, "label": "Carbon Hero" },
+      "low": { "max_monthly_kg": 300, "label": "Eco Friendly" },
+      "below_average": { "max_monthly_kg": 450, "label": "Below Average" },
+      "average": { "max_monthly_kg": 600, "label": "Average Urban" },
+      "above_average": { "max_monthly_kg": 800, "label": "Above Average" },
+      "high": { "max_monthly_kg": 1100, "label": "High Footprint" },
+      "very_high": { "max_monthly_kg": 99999, "label": "Very High Footprint" }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+version: "3.9"
+
+services:
+  # ── CarbonWise AI Backend ──────────────────────────────────────────────────
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: carbonwise-api
+    ports:
+      - "8000:8000"
+    environment:
+      # AI Configuration
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - GEMINI_MODEL=${GEMINI_MODEL:-gemini-2.5-flash-preview-05-20}
+      - GEMINI_TEMPERATURE=${GEMINI_TEMPERATURE:-0.7}
+      # Application
+      - ENVIRONMENT=${ENVIRONMENT:-production}
+      - DEBUG=${DEBUG:-false}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+      - LOG_FORMAT=${LOG_FORMAT:-json}
+      # CORS
+      - ALLOWED_ORIGINS=${ALLOWED_ORIGINS:-["http://localhost:3000"]}
+      # Security
+      - MAX_PROMPT_LENGTH=${MAX_PROMPT_LENGTH:-2000}
+    volumes:
+      # Mount data directory (allows updating emission factors without rebuild)
+      - ./data:/app/data:ro
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+    restart: unless-stopped
+    networks:
+      - carbonwise-net
+
+  # ── Development API (with hot reload) ─────────────────────────────────────
+  api-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: builder
+    container_name: carbonwise-api-dev
+    ports:
+      - "8000:8000"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - ENVIRONMENT=development
+      - DEBUG=true
+      - LOG_FORMAT=console
+      - RELOAD=true
+    volumes:
+      - .:/app
+      - ./data:/app/data
+    command: python -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    profiles:
+      - dev
+    networks:
+      - carbonwise-net
+
+networks:
+  carbonwise-net:
+    driver: bridge
