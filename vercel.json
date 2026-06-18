@@ -2,12 +2,8 @@
   "framework": "nextjs",
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
-  "installCommand": "npm install",
+  "installCommand": "npm install --force",
   "devCommand": "npm run dev",
-  "env": {
-    "NEXT_PUBLIC_API_URL": "@carbonwise-api-url",
-    "NEXT_PUBLIC_APP_URL": "@carbonwise-app-url"
-  },
   "regions": ["bom1"],
   "headers": [
     {
